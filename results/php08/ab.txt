@@ -1,0 +1,343 @@
+===== original06 =====
+ab -n 200 -c 20 -k http://127.0.0.1:8109/original06/benchmarks/original06.php?resource=plants
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Finished 200 requests
+
+
+Server Software:        Apache/2.4.58
+Server Hostname:        127.0.0.1
+Server Port:            8109
+
+Document Path:          /original06/benchmarks/original06.php?resource=plants
+Document Length:        120300 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.878 seconds
+Complete requests:      200
+Failed requests:        0
+Keep-Alive requests:    200
+Total transferred:      24162747 bytes
+HTML transferred:       24060000 bytes
+Requests per second:    227.68 [#/sec] (mean)
+Time per request:       87.844 [ms] (mean)
+Time per request:       4.392 [ms] (mean, across all concurrent requests)
+Transfer rate:          26861.84 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       2
+Processing:    37   84  24.1     81     205
+Waiting:       18   74  26.5     73     199
+Total:         38   84  24.1     81     205
+
+Percentage of the requests served within a certain time (ms)
+  50%     81
+  66%     89
+  75%     98
+  80%    101
+  90%    113
+  95%    120
+  98%    144
+  99%    199
+ 100%    205 (longest request)
+
+===== nplus =====
+ab -n 200 -c 20 -k http://127.0.0.1:8109/nplus/api.php?resource=plants
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Finished 200 requests
+
+
+Server Software:        Apache/2.4.58
+Server Hostname:        127.0.0.1
+Server Port:            8109
+
+Document Path:          /nplus/api.php?resource=plants
+Document Length:        132300 bytes
+
+Concurrency Level:      20
+Time taken for tests:   9.936 seconds
+Complete requests:      200
+Failed requests:        0
+Keep-Alive requests:    200
+Total transferred:      26566749 bytes
+HTML transferred:       26460000 bytes
+Requests per second:    20.13 [#/sec] (mean)
+Time per request:       993.635 [ms] (mean)
+Time per request:       49.682 [ms] (mean, across all concurrent requests)
+Transfer rate:          2611.03 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:   399  925 354.4    805    2372
+Waiting:      381  900 329.8    792    2120
+Total:        400  925 354.5    805    2373
+
+Percentage of the requests served within a certain time (ms)
+  50%    805
+  66%   1057
+  75%   1142
+  80%   1172
+  90%   1366
+  95%   1651
+  98%   1996
+  99%   2355
+ 100%   2373 (longest request)
+
+===== nplus_due =====
+ab -n 200 -c 20 -k http://127.0.0.1:8109/nplus/api.php?resource=plants&due=1
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Finished 200 requests
+
+
+Server Software:        Apache/2.4.58
+Server Hostname:        127.0.0.1
+Server Port:            8109
+
+Document Path:          /nplus/api.php?resource=plants&due=1
+Document Length:        5823 bytes
+
+Concurrency Level:      20
+Time taken for tests:   1.045 seconds
+Complete requests:      200
+Failed requests:        0
+Keep-Alive requests:    200
+Total transferred:      1270541 bytes
+HTML transferred:       1164600 bytes
+Requests per second:    191.31 [#/sec] (mean)
+Time per request:       104.545 [ms] (mean)
+Time per request:       5.227 [ms] (mean, across all concurrent requests)
+Transfer rate:          1186.83 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      0       2
+Processing:    39   84  36.8     81     475
+Waiting:       39   84  36.8     81     475
+Total:         39   84  36.8     81     475
+
+Percentage of the requests served within a certain time (ms)
+  50%     81
+  66%     89
+  75%     93
+  80%    101
+  90%    117
+  95%    129
+  98%    144
+  99%    168
+ 100%    475 (longest request)
+
+===== nplus_indexed =====
+ab -n 200 -c 20 -k http://127.0.0.1:8109/nplus/api.php?resource=plants
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Finished 200 requests
+
+
+Server Software:        Apache/2.4.58
+Server Hostname:        127.0.0.1
+Server Port:            8109
+
+Document Path:          /nplus/api.php?resource=plants
+Document Length:        132300 bytes
+
+Concurrency Level:      20
+Time taken for tests:   8.779 seconds
+Complete requests:      200
+Failed requests:        0
+Keep-Alive requests:    200
+Total transferred:      26566739 bytes
+HTML transferred:       26460000 bytes
+Requests per second:    22.78 [#/sec] (mean)
+Time per request:       877.924 [ms] (mean)
+Time per request:       43.896 [ms] (mean, across all concurrent requests)
+Transfer rate:          2955.16 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       2
+Processing:   234  801 363.9    759    4988
+Waiting:      214  753 371.2    698    4980
+Total:        234  801 363.9    759    4988
+
+Percentage of the requests served within a certain time (ms)
+  50%    759
+  66%    839
+  75%    882
+  80%    921
+  90%   1058
+  95%   1175
+  98%   1330
+  99%   1837
+ 100%   4988 (longest request)
+
+===== optimized =====
+ab -n 200 -c 20 -k http://127.0.0.1:8109/after/api.php?resource=plants
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Finished 200 requests
+
+
+Server Software:        Apache/2.4.58
+Server Hostname:        127.0.0.1
+Server Port:            8109
+
+Document Path:          /after/api.php?resource=plants
+Document Length:        132300 bytes
+
+Concurrency Level:      20
+Time taken for tests:   1.249 seconds
+Complete requests:      200
+Failed requests:        0
+Keep-Alive requests:    200
+Total transferred:      26566143 bytes
+HTML transferred:       26460000 bytes
+Requests per second:    160.16 [#/sec] (mean)
+Time per request:       124.876 [ms] (mean)
+Time per request:       6.244 [ms] (mean, across all concurrent requests)
+Transfer rate:          20775.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:    38   87  74.7     79    1006
+Waiting:       28   75  75.6     70    1000
+Total:         38   87  74.7     79    1006
+
+Percentage of the requests served within a certain time (ms)
+  50%     79
+  66%     88
+  75%     93
+  80%     96
+  90%    107
+  95%    117
+  98%    148
+  99%    501
+ 100%   1006 (longest request)
+
+===== grouped_due =====
+ab -n 200 -c 20 -k http://127.0.0.1:8109/uncached/api.php?resource=plants&due=1
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Finished 200 requests
+
+
+Server Software:        Apache/2.4.58
+Server Hostname:        127.0.0.1
+Server Port:            8109
+
+Document Path:          /uncached/api.php?resource=plants&due=1
+Document Length:        5823 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.982 seconds
+Complete requests:      200
+Failed requests:        0
+Keep-Alive requests:    200
+Total transferred:      1270200 bytes
+HTML transferred:       1164600 bytes
+Requests per second:    203.72 [#/sec] (mean)
+Time per request:       98.175 [ms] (mean)
+Time per request:       4.909 [ms] (mean, across all concurrent requests)
+Transfer rate:          1263.49 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:    23   55  66.1     47     764
+Waiting:       18   55  66.2     47     764
+Total:         23   55  66.1     47     764
+
+Percentage of the requests served within a certain time (ms)
+  50%     47
+  66%     54
+  75%     60
+  80%     62
+  90%     71
+  95%     85
+  98%    105
+  99%    602
+ 100%    764 (longest request)
+
+===== cache_warm =====
+ab -n 200 -c 20 -k http://127.0.0.1:8109/after/api.php?resource=plants&due=1
+This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+Completed 100 requests
+Completed 200 requests
+Finished 200 requests
+
+
+Server Software:        Apache/2.4.58
+Server Hostname:        127.0.0.1
+Server Port:            8109
+
+Document Path:          /after/api.php?resource=plants&due=1
+Document Length:        5823 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.553 seconds
+Complete requests:      200
+Failed requests:        0
+Keep-Alive requests:    200
+Total transferred:      1269651 bytes
+HTML transferred:       1164600 bytes
+Requests per second:    361.36 [#/sec] (mean)
+Time per request:       55.346 [ms] (mean)
+Time per request:       2.767 [ms] (mean, across all concurrent requests)
+Transfer rate:          2240.24 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       1
+Processing:    21   51  15.5     52     104
+Waiting:       19   51  15.6     52     104
+Total:         21   51  15.5     52     104
+
+Percentage of the requests served within a certain time (ms)
+  50%     52
+  66%     56
+  75%     59
+  80%     61
+  90%     70
+  95%     82
+  98%     91
+  99%    100
+ 100%    104 (longest request)
+

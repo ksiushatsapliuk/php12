@@ -1,0 +1,855 @@
+{
+  "environment": {
+    "php": "8.5.10",
+    "mysql": "8.0.43",
+    "url": "http://127.0.0.1:8120",
+    "database": "codex_php12_test",
+    "mysql_port": 3312,
+    "isolation": "Separate test database; source08 and working database not modified"
+  },
+  "announcements_http": {
+    "tested_at": "2026-11-04T20:06:02+02:00",
+    "url": "http://127.0.0.1:8120",
+    "total": 15,
+    "failed": 0,
+    "checks": [
+      {
+        "test": "page_and_session",
+        "passed": true
+      },
+      {
+        "test": "list_available",
+        "passed": true
+      },
+      {
+        "test": "missing_token",
+        "passed": true,
+        "expected_http": 403
+      },
+      {
+        "test": "wrong_token",
+        "passed": true,
+        "expected_http": 403
+      },
+      {
+        "test": "blank_title",
+        "passed": true,
+        "expected_http": 400
+      },
+      {
+        "test": "missing_body",
+        "passed": true,
+        "expected_http": 400
+      },
+      {
+        "test": "long_title",
+        "passed": true,
+        "expected_http": 400
+      },
+      {
+        "test": "create_with_token",
+        "passed": true
+      },
+      {
+        "test": "new_record_first",
+        "passed": true
+      },
+      {
+        "test": "server_timestamp",
+        "passed": true
+      },
+      {
+        "test": "get_delete_rejected",
+        "passed": true
+      },
+      {
+        "test": "delete_without_token_rejected",
+        "passed": true
+      },
+      {
+        "test": "record_preserved",
+        "passed": true
+      },
+      {
+        "test": "delete_with_token",
+        "passed": true
+      },
+      {
+        "test": "original_list_restored",
+        "passed": true
+      }
+    ]
+  },
+  "announcements_browser": {
+    "tested_at": "2026-11-04T17:59:37.616Z",
+    "checks": [
+      {
+        "test": "initial_list_uses_database",
+        "passed": true
+      },
+      {
+        "test": "initial_records_not_animated",
+        "passed": true
+      },
+      {
+        "test": "csrf_reject_missing",
+        "passed": true
+      },
+      {
+        "test": "csrf_reject_wrong",
+        "passed": true
+      },
+      {
+        "test": "server_validation_4",
+        "passed": true
+      },
+      {
+        "test": "server_validation_5",
+        "passed": true
+      },
+      {
+        "test": "server_validation_6",
+        "passed": true
+      },
+      {
+        "test": "server_validation_7",
+        "passed": true
+      },
+      {
+        "test": "server_validation_8",
+        "passed": true
+      },
+      {
+        "test": "server_validation_9",
+        "passed": true
+      },
+      {
+        "test": "rejected_requests_do_not_change_data",
+        "passed": true
+      },
+      {
+        "test": "delete_get_405",
+        "passed": true
+      },
+      {
+        "test": "unsupported_method_405",
+        "passed": true
+      },
+      {
+        "test": "publish_returns_201",
+        "passed": true
+      },
+      {
+        "test": "new_post_first",
+        "passed": true
+      },
+      {
+        "test": "real_response_fields",
+        "passed": true
+      },
+      {
+        "test": "slide_down_and_fade_in",
+        "passed": true,
+        "motion": {
+          "opacity": 0.480594,
+          "y": -12.4658,
+          "duration": 550
+        }
+      },
+      {
+        "test": "animation_keeps_frames_responsive",
+        "passed": true,
+        "frames": {
+          "max_ms": 62.59999999999991,
+          "average_ms": 16.233333333333334
+        }
+      },
+      {
+        "test": "entry_animation_finishes",
+        "passed": true
+      },
+      {
+        "test": "new_badge_fades",
+        "passed": true,
+        "fading": {
+          "opacity": 0.257779,
+          "duration": 4000
+        }
+      },
+      {
+        "test": "badge_removed_after_animation",
+        "passed": true
+      },
+      {
+        "test": "existing_cards_preserved",
+        "passed": true
+      },
+      {
+        "test": "refresh_does_not_reanimate_known_records",
+        "passed": true
+      },
+      {
+        "test": "refresh_animates_only_new_id",
+        "passed": true
+      },
+      {
+        "test": "visibility_handler_pauses_css",
+        "passed": true,
+        "method": "visibilitychange dispatched with document.hidden=true"
+      },
+      {
+        "test": "visibility_handler_resumes_css",
+        "passed": true
+      },
+      {
+        "test": "pagehide_finishes_animations",
+        "passed": true
+      },
+      {
+        "test": "changing_motion_preference_finishes_animation",
+        "passed": true
+      },
+      {
+        "test": "reduced_motion_new_post_static",
+        "passed": true
+      },
+      {
+        "test": "reload_preserves_posts_without_new_badges",
+        "passed": true
+      },
+      {
+        "test": "xss_is_text",
+        "passed": true
+      },
+      {
+        "test": "no_alert_executed",
+        "passed": true
+      },
+      {
+        "test": "sql_payload_saved_as_data",
+        "passed": true
+      },
+      {
+        "test": "delete_without_token_403",
+        "passed": true
+      },
+      {
+        "test": "cancel_delete_keeps_record",
+        "passed": true
+      },
+      {
+        "test": "confirm_delete_removes_record",
+        "passed": true
+      },
+      {
+        "test": "mobile_has_no_horizontal_overflow",
+        "passed": true
+      },
+      {
+        "test": "network_error_keeps_existing_feed",
+        "passed": true
+      },
+      {
+        "test": "no_javascript_errors",
+        "passed": true,
+        "errors": []
+      }
+    ]
+  },
+  "plants_http": {
+    "tested_at": "2026-11-04T19:54:47+02:00",
+    "url": "http://127.0.0.1:8120",
+    "php": "8.5.10",
+    "total": 65,
+    "passed": 65,
+    "failed": 0,
+    "checks": [
+      {
+        "test": "session_token",
+        "passed": true
+      },
+      {
+        "test": "create_json_with_token",
+        "passed": true
+      },
+      {
+        "test": "new_session_has_other_token",
+        "passed": true
+      },
+      {
+        "test": "csrf_create_json_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_json_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_json_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_missing_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_blank_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_array_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_long_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_negative_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_zero_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_large_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_fraction_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_invalid_date",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_future_date",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_invalid_flag",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_blank_light",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "edit_server_validation",
+        "passed": true,
+        "expected_http": 422,
+        "actual_http": 422,
+        "data_unchanged": true
+      },
+      {
+        "test": "delete_invalid_id",
+        "passed": true,
+        "expected_http": 422,
+        "actual_http": 422,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_4",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_5",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_6",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_water",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_edit_does_not_save",
+        "passed": true,
+        "expected_http": 200,
+        "actual_http": 200,
+        "data_unchanged": true
+      },
+      {
+        "test": "edit_invalid_id_abc",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_-1",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_1%20OR%201=1",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_%5B1%5D",
+        "passed": true
+      },
+      {
+        "test": "sqli_search",
+        "passed": true,
+        "payload": "' OR '1'='1"
+      },
+      {
+        "test": "sqli_interval",
+        "passed": true
+      },
+      {
+        "test": "xss_payload_saved_5",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_5",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "xss_payload_saved_6",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_6",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "xss_payload_saved_7",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_7",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "markWatered_with_token",
+        "passed": true
+      },
+      {
+        "test": "edit_form_with_token",
+        "passed": true
+      },
+      {
+        "test": "create_form_with_hidden_token",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/install.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/benchmark.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/security_check.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_benchmarks/original06.php?resource=plants",
+        "passed": true
+      },
+      {
+        "test": "cleanup_4",
+        "passed": true
+      },
+      {
+        "test": "cleanup_5",
+        "passed": true
+      },
+      {
+        "test": "cleanup_6",
+        "passed": true
+      },
+      {
+        "test": "cleanup_7",
+        "passed": true
+      },
+      {
+        "test": "cleanup_8",
+        "passed": true
+      },
+      {
+        "test": "original_data_restored",
+        "passed": true
+      }
+    ]
+  },
+  "plants_browser": {
+    "tested_at": "2026-11-04T17:57:38.766Z",
+    "checks": [
+      {
+        "test": "08_create_payload",
+        "passed": true
+      },
+      {
+        "test": "08_xss_list_9",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "08_xss_edit_9",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "08_create_payload",
+        "passed": true
+      },
+      {
+        "test": "08_xss_list_10",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "08_xss_edit_10",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "08_create_payload",
+        "passed": true
+      },
+      {
+        "test": "08_xss_list_11",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "08_xss_edit_11",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "08_no_xss_dialogs",
+        "passed": true
+      },
+      {
+        "test": "search_sqli_in_browser",
+        "passed": true
+      },
+      {
+        "test": "live_search",
+        "passed": true
+      },
+      {
+        "test": "interval_filter",
+        "passed": true
+      },
+      {
+        "test": "due_filter",
+        "passed": true
+      },
+      {
+        "test": "sort_by_name",
+        "passed": true
+      },
+      {
+        "test": "add_ajax_resets_filters",
+        "passed": true
+      },
+      {
+        "test": "water_ajax",
+        "passed": true
+      },
+      {
+        "test": "edit_browser",
+        "passed": true
+      },
+      {
+        "test": "delete_cancel",
+        "passed": true
+      },
+      {
+        "test": "delete_confirm",
+        "passed": true
+      },
+      {
+        "test": "cookie_flags",
+        "passed": true
+      },
+      {
+        "test": "cache_hit_and_same_json",
+        "passed": true
+      },
+      {
+        "test": "08_no_javascript_errors",
+        "passed": true,
+        "errors": []
+      }
+    ]
+  },
+  "static": {
+    "php_files": 26,
+    "javascript_files": 3,
+    "syntax_failures": 0,
+    "plant_assets_unchanged": true,
+    "installation_runs": 2
+  },
+  "requirements": {
+    "technology": "CSS",
+    "entry_duration_ms": 550,
+    "new_badge_duration_ms": 4000,
+    "data_source": "PDO/MySQL announcements, resource=announcements; array announcements in JavaScript",
+    "canvas_steps": "Steps 3 and 5 apply only to Canvas and are not applicable to variant 18",
+    "pause_test": "Visibility handler tested by dispatching visibilitychange with document.hidden=true; not a claim of manual tab switching",
+    "performance": "16 frame timestamps sampled during animation; maximum gap below 200 ms. This is a local smoke check, not a guarantee of 60 FPS."
+  },
+  "source08_sha256": {
+    "api.php": "bec56b2d91af59fc2d9d23540d010784f486c0f0ed6b14cec8052d9ba41eaf07",
+    "config.php": "bbfb21dda0dec74e8555a5f6ea4fb8219b661452b62e8b5af5d330d2df69771f",
+    "delete.php": "a90efc3605eb5ecc34a421dec2582379680c65b9c2a03a4a4fb4240441f60a9c",
+    "edit.php": "a153ff13c4544abff027d167db282411987d1434c7f3ce3d417ee9d4c5136804",
+    "index.php": "65a875611b60610338d0bce53bded074422fffadb81a097639fe897ff64f6cd3",
+    "README.md": "a26c27f0ff10080965f58148162272ffb579b3b90d0b4c92cb8f38fe0cffcc69",
+    "benchmarks/BeforeGarden.php": "db9b2ef6beda89b9f51924edc206323a64d84375dd4e3fb26edfb625c3520cc0",
+    "benchmarks/original06.php": "92fc8c535aa6f8e5dc88c165443fee8f1151cc35114e95ee0c2e4ef3850210cd",
+    "benchmarks/UncachedGarden.php": "18d98bbcdce5097b8a4c12a4efb5d0db0c1dce578271483d2ee16b0ec5915c56",
+    "classes/Garden.php": "a1acbb59902be7b8a2d25948a60f6524d7e8b8460edb5a6933900c4e2b31aad9",
+    "classes/Plant.php": "cacac43c3fe54e4a76c7f11a67d737215dc5fd0f0b521a7da7da7ceb8f0bbe3c",
+    "classes/Succulent.php": "e6d0513b417df53c09182eb1af0337d7140f689ff93d0a228489db6cc894336d",
+    "docs/08_bezpeka_vrazlyvosti.pdf": "cb67a6e64fbf45159a082c92e65a79e37a04cdc57f74954343b2988431bad00f",
+    "docs/PHP08_ЦаплюкОГ_ІП-41.docx": "43a93e57c7aba670184b73cf9502e24e68330d96cc29be2b84b4c5120ffba283",
+    "lib/api_common.php": "333c5fdb91cd2dbfd49e26454749eab04560c8c61d54ea9ae7f54ae6f2b43df0",
+    "lib/bootstrap.php": "2e0975da6cf9d5473b1228f53f01f6603b0b6d3c1f403011b97d8bdb5b86fed4",
+    "lib/db.php": "ac6ee93b7766f0ab78cb85019d5e3be05bd608c5a3ecd0eed9fa5c2cab8fe02a",
+    "lib/FileCache.php": "3b5c04029a7a6624af9f622e9da07c76d8fe007f30b804f5c6b7368f9616b806",
+    "lib/functions.php": "54afad5ec21b66fdf41b310093a7f7c4cd8d47c815864796f9b3b2d244ab19db",
+    "lib/MeasuredPDO.php": "b339710202b45cf5675112cb681ed4d4553466cd1a4ef1f6a45ab4c64117ae65",
+    "lib/migrations.php": "e946876772de3dce95acfa81469d25b380d026967063784f3ad7dccdc2db8a36",
+    "lib/Profile.php": "4679677430b17cc676a980bc6626529b8fe0ce90a35c4962242553507c68ea02",
+    "results/ab.txt": "66968487fbd498ebcd250a4648b1ea9a71de556c96d554fe469cc3d9710c16a3",
+    "results/security.json": "963670aa3bbffcd552f10f6c2ca2704fc1839926014fc3fe7fa9f11096035655",
+    "results/summary.json": "97d780bc7106ece8c650c94bd11fe2eaa1504b22693e3f6fc6901e51b91daf57",
+    "sql/01_due_date.sql": "1ea33ae9df6c4a4eade43e4a6277c4e516a26e551b3c0babb95d191003923ee5",
+    "sql/indexes.sql": "aa39953421ece4eecab2c152885b83f75d8f6f1e1ed68cc3b30a4b9d5652abba",
+    "sql/schema.sql": "384c09c8a9f852e44f3b4766e7f459cf3629853d0876e5c06e6d6ad921eb3e65",
+    "tools/benchmark.php": "8404070372d5b493eb5b5417acacef6b5c779e63b1c97e48ca5eac42ed719050",
+    "tools/install.php": "75a15796a37eefdd39c585158b2d48af6b159cc2058216418ca150f8b90a6a6b",
+    "tools/security_check.php": "52f66fcf0fa272b59919b0613848ee048c6a8adb6200942647e763738433f982",
+    "assets/css/style.css": "9459a7a2353fe84fe0b5ac6adb31cc785cf4e6c9f405a8c4170cd27f343a2e6c",
+    "assets/img/alocasia.png": "911020007b7b5a3afa6d6791aabb63abd0c698a8da034af39e749bc41691d731",
+    "assets/img/succulent.png": "3c259949ebfd32784fe1e688276dc5036a1b4f43d9d2947ae0c76165dd01539a",
+    "assets/img/watering-can.png": "90ef173f9df01abd141c6101aa3197dfbbf56f61d03b01d0b0501e2772016428",
+    "assets/js/script.js": "095d058806fc1dbb94dc12c7de474cf711c851927b15c2f3cba8376bcc50f939",
+    "assets/js/sort.js": "9e3946742b48fda2e5d8fa992a37908bfd581a366da9797d57bec2a1560af54c"
+  },
+  "http_guards": [
+    {
+      "path": "lib/announcements_api.php",
+      "expected_http": 404,
+      "actual_http": 404
+    },
+    {
+      "path": "tools/check_announcements.php",
+      "expected_http": 404,
+      "actual_http": 404
+    }
+  ],
+  "dependency_error": {
+    "curl_not_loaded_exit_code": 1
+  },
+  "source12_code_sha256": {
+    "announcements.php": "2f4f14ea1b7cb23ed72963d07117612f8534d7d4884caf2eecd49bdc50cb5fd2",
+    "api.php": "73c2836d8540bbb13408c5fa166ce13943d7c4c996162eb503a75402aa9b22fe",
+    "config.php": "36d55b9edffa628d18aef83b0afb242ecfe72a8616974e5f25878250df360112",
+    "delete.php": "a90efc3605eb5ecc34a421dec2582379680c65b9c2a03a4a4fb4240441f60a9c",
+    "edit.php": "a153ff13c4544abff027d167db282411987d1434c7f3ce3d417ee9d4c5136804",
+    "index.php": "1064be22a8e3323a4e20f2ed2e6548164e57cb025163f9b26b02416b19934fc5",
+    "benchmarks/BeforeGarden.php": "db9b2ef6beda89b9f51924edc206323a64d84375dd4e3fb26edfb625c3520cc0",
+    "benchmarks/original06.php": "92fc8c535aa6f8e5dc88c165443fee8f1151cc35114e95ee0c2e4ef3850210cd",
+    "benchmarks/UncachedGarden.php": "18d98bbcdce5097b8a4c12a4efb5d0db0c1dce578271483d2ee16b0ec5915c56",
+    "classes/AnnouncementBoard.php": "bd02d8a4825c8d614c6dcca0be38012d103446784a47d07ce9620a06ecb87442",
+    "classes/Garden.php": "a1acbb59902be7b8a2d25948a60f6524d7e8b8460edb5a6933900c4e2b31aad9",
+    "classes/Plant.php": "cacac43c3fe54e4a76c7f11a67d737215dc5fd0f0b521a7da7da7ceb8f0bbe3c",
+    "classes/Succulent.php": "e6d0513b417df53c09182eb1af0337d7140f689ff93d0a228489db6cc894336d",
+    "lib/announcements_api.php": "38c32e7a7a5e3e4c65f4207d3e55a43394af2a1f30193ebbec7fb13366d00c84",
+    "lib/api_common.php": "333c5fdb91cd2dbfd49e26454749eab04560c8c61d54ea9ae7f54ae6f2b43df0",
+    "lib/bootstrap.php": "2e0975da6cf9d5473b1228f53f01f6603b0b6d3c1f403011b97d8bdb5b86fed4",
+    "lib/db.php": "ac6ee93b7766f0ab78cb85019d5e3be05bd608c5a3ecd0eed9fa5c2cab8fe02a",
+    "lib/FileCache.php": "3b5c04029a7a6624af9f622e9da07c76d8fe007f30b804f5c6b7368f9616b806",
+    "lib/functions.php": "54afad5ec21b66fdf41b310093a7f7c4cd8d47c815864796f9b3b2d244ab19db",
+    "lib/MeasuredPDO.php": "b339710202b45cf5675112cb681ed4d4553466cd1a4ef1f6a45ab4c64117ae65",
+    "lib/migrations.php": "e946876772de3dce95acfa81469d25b380d026967063784f3ad7dccdc2db8a36",
+    "lib/Profile.php": "4679677430b17cc676a980bc6626529b8fe0ce90a35c4962242553507c68ea02",
+    "sql/01_due_date.sql": "1ea33ae9df6c4a4eade43e4a6277c4e516a26e551b3c0babb95d191003923ee5",
+    "sql/02_announcements.sql": "e314e7d1590f59c1a5e63e767b9a3cc3dc72f09040a7edb2a893b0d3a6ef889d",
+    "sql/indexes.sql": "aa39953421ece4eecab2c152885b83f75d8f6f1e1ed68cc3b30a4b9d5652abba",
+    "sql/schema.sql": "ad95984c8dc23815b9383c1cc7f222d6e30151ec4a66cc2dd5eb222232077942",
+    "tools/benchmark.php": "86b49f4b279a7020aefb9eb29f7fed986b43f48172e83420a1a94cf662a73259",
+    "tools/check_announcements.php": "ab3135fcc17e95a67df18f6e448d8c976945933e6452577c6bdc022733126e3e",
+    "tools/install.php": "993291f7ae4959ccf6a27e1e6a1d00f45f8c266835b1cd16b302b3eef2b960ba",
+    "tools/security_check.php": "52f66fcf0fa272b59919b0613848ee048c6a8adb6200942647e763738433f982",
+    "assets/css/announcements.css": "20facce6902cd3dd4e83a4e2765aea40e639031fb65057d8f0d5430b6af2de6a",
+    "assets/css/style.css": "9459a7a2353fe84fe0b5ac6adb31cc785cf4e6c9f405a8c4170cd27f343a2e6c",
+    "assets/js/announcements.js": "efd1cd35435d4d59a6112e34990c72b89300d12460a04c333b5016ff2cec0d47",
+    "assets/js/script.js": "095d058806fc1dbb94dc12c7de474cf711c851927b15c2f3cba8376bcc50f939",
+    "assets/js/sort.js": "9e3946742b48fda2e5d8fa992a37908bfd581a366da9797d57bec2a1560af54c"
+  }
+}

@@ -1,0 +1,742 @@
+{
+  "http": {
+    "tested_at": "2026-11-03T14:22:00+02:00",
+    "url": "http://127.0.0.1:8098",
+    "php": "8.5.10",
+    "total": 65,
+    "passed": 65,
+    "failed": 0,
+    "checks": [
+      {
+        "test": "session_token",
+        "passed": true
+      },
+      {
+        "test": "create_json_with_token",
+        "passed": true
+      },
+      {
+        "test": "new_session_has_other_token",
+        "passed": true
+      },
+      {
+        "test": "csrf_create_json_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_json_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_json_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_missing_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_blank_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_array_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_long_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_negative_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_zero_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_large_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_fraction_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_invalid_date",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_future_date",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_invalid_flag",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_blank_light",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "edit_server_validation",
+        "passed": true,
+        "expected_http": 422,
+        "actual_http": 422,
+        "data_unchanged": true
+      },
+      {
+        "test": "delete_invalid_id",
+        "passed": true,
+        "expected_http": 422,
+        "actual_http": 422,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_4",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_5",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_6",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_water",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_edit_does_not_save",
+        "passed": true,
+        "expected_http": 200,
+        "actual_http": 200,
+        "data_unchanged": true
+      },
+      {
+        "test": "edit_invalid_id_abc",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_-1",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_1%20OR%201=1",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_%5B1%5D",
+        "passed": true
+      },
+      {
+        "test": "sqli_search",
+        "passed": true,
+        "payload": "' OR '1'='1"
+      },
+      {
+        "test": "sqli_interval",
+        "passed": true
+      },
+      {
+        "test": "xss_payload_saved_5",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_5",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "xss_payload_saved_6",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_6",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "xss_payload_saved_7",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_7",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "markWatered_with_token",
+        "passed": true
+      },
+      {
+        "test": "edit_form_with_token",
+        "passed": true
+      },
+      {
+        "test": "create_form_with_hidden_token",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/install.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/benchmark.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/security_check.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_benchmarks/original06.php?resource=plants",
+        "passed": true
+      },
+      {
+        "test": "cleanup_4",
+        "passed": true
+      },
+      {
+        "test": "cleanup_5",
+        "passed": true
+      },
+      {
+        "test": "cleanup_6",
+        "passed": true
+      },
+      {
+        "test": "cleanup_7",
+        "passed": true
+      },
+      {
+        "test": "cleanup_8",
+        "passed": true
+      },
+      {
+        "test": "original_data_restored",
+        "passed": true
+      }
+    ]
+  },
+  "browser": {
+    "tested_at": "2026-11-03T12:27:07.225Z",
+    "checks": [
+      {
+        "test": "07_create_payload",
+        "passed": true
+      },
+      {
+        "test": "07_xss_list_10",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "07_xss_edit_10",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "07_create_payload",
+        "passed": true
+      },
+      {
+        "test": "07_xss_list_11",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "07_xss_edit_11",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "07_create_payload",
+        "passed": true
+      },
+      {
+        "test": "07_xss_list_12",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "07_xss_edit_12",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "07_no_xss_dialogs",
+        "passed": true
+      },
+      {
+        "test": "07_no_javascript_errors",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "test": "08_create_payload",
+        "passed": true
+      },
+      {
+        "test": "08_xss_list_12",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "08_xss_edit_12",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "08_create_payload",
+        "passed": true
+      },
+      {
+        "test": "08_xss_list_13",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "08_xss_edit_13",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "08_create_payload",
+        "passed": true
+      },
+      {
+        "test": "08_xss_list_14",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "08_xss_edit_14",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "08_no_xss_dialogs",
+        "passed": true
+      },
+      {
+        "test": "search_sqli_in_browser",
+        "passed": true
+      },
+      {
+        "test": "live_search",
+        "passed": true
+      },
+      {
+        "test": "interval_filter",
+        "passed": true
+      },
+      {
+        "test": "due_filter",
+        "passed": true
+      },
+      {
+        "test": "sort_by_name",
+        "passed": true
+      },
+      {
+        "test": "add_ajax_resets_filters",
+        "passed": true
+      },
+      {
+        "test": "water_ajax",
+        "passed": true
+      },
+      {
+        "test": "edit_browser",
+        "passed": true
+      },
+      {
+        "test": "delete_cancel",
+        "passed": true
+      },
+      {
+        "test": "delete_confirm",
+        "passed": true
+      },
+      {
+        "test": "cookie_flags",
+        "passed": true
+      },
+      {
+        "test": "cache_hit_and_same_json",
+        "passed": true
+      },
+      {
+        "test": "08_no_javascript_errors",
+        "passed": true,
+        "errors": []
+      }
+    ]
+  },
+  "comparison": {
+    "environment": "Isolated MySQL 8.0.43, test databases on port 3308; PHP display_errors=On at startup",
+    "tests": [
+      {
+        "version": "07",
+        "test": "json_create_without_csrf",
+        "actual_http": 201,
+        "row_created": true,
+        "expected_http": 201
+      },
+      {
+        "version": "07",
+        "test": "json_water_without_csrf",
+        "actual_http": 200,
+        "watered_date": "2026-11-03",
+        "expected_http": 200
+      },
+      {
+        "version": "07",
+        "test": "sqli_search",
+        "actual_http": 200,
+        "rows": 0,
+        "payload": "' OR '1'='1",
+        "expected_rows": 0
+      },
+      {
+        "version": "07",
+        "test": "query_error_edit.php?id=1",
+        "actual_http": 200,
+        "details_exposed": true,
+        "expected_details_exposed": true
+      },
+      {
+        "version": "07",
+        "test": "query_error_api.php?resource=plants",
+        "actual_http": 500,
+        "details_exposed": false,
+        "expected_details_exposed": false
+      },
+      {
+        "version": "07",
+        "test": "server_logs_details",
+        "passed": true
+      },
+      {
+        "version": "08",
+        "test": "json_create_without_csrf",
+        "actual_http": 403,
+        "row_created": false,
+        "expected_http": 403
+      },
+      {
+        "version": "08",
+        "test": "json_water_without_csrf",
+        "actual_http": 403,
+        "watered_date": null,
+        "expected_http": 403
+      },
+      {
+        "version": "08",
+        "test": "sqli_search",
+        "actual_http": 200,
+        "rows": 0,
+        "payload": "' OR '1'='1",
+        "expected_rows": 0
+      },
+      {
+        "version": "08",
+        "test": "query_error_edit.php?id=1",
+        "actual_http": 500,
+        "details_exposed": false,
+        "expected_details_exposed": false
+      },
+      {
+        "version": "08",
+        "test": "query_error_api.php?resource=plants",
+        "actual_http": 500,
+        "details_exposed": false,
+        "expected_details_exposed": false
+      },
+      {
+        "version": "08",
+        "test": "server_logs_details",
+        "passed": true
+      }
+    ]
+  },
+  "static_review": {
+    "php_syntax_files": 22,
+    "php_syntax_failures": 0,
+    "source07_sha256": {
+      "api.php": "448ba90918ee1b06260084c1f78077175da244c1aa5c0af29f7486659d568256",
+      "config.php": "dafb81fc37f13c350ee3a061c1a44eb6166ee5f7850d628fa08dcbab07406821",
+      "delete.php": "a90efc3605eb5ecc34a421dec2582379680c65b9c2a03a4a4fb4240441f60a9c",
+      "edit.php": "5133bd756207c0f8d6cf711bc83b39063e71edc62058be9313b40465f57b786c",
+      "index.php": "471f4e61409f2d1ecaa716a78b72cd7877930bb6d1d92608f80bfdfbe2fc2a32",
+      "README.md": "2b098d8170e4e2de3434efb06b3661a44f8ad9ca9e72c9c356487197d5de56e0",
+      "benchmarks\\BeforeGarden.php": "db9b2ef6beda89b9f51924edc206323a64d84375dd4e3fb26edfb625c3520cc0",
+      "benchmarks\\original06.php": "92fc8c535aa6f8e5dc88c165443fee8f1151cc35114e95ee0c2e4ef3850210cd",
+      "benchmarks\\UncachedGarden.php": "18d98bbcdce5097b8a4c12a4efb5d0db0c1dce578271483d2ee16b0ec5915c56",
+      "classes\\Garden.php": "a1acbb59902be7b8a2d25948a60f6524d7e8b8460edb5a6933900c4e2b31aad9",
+      "classes\\Plant.php": "cacac43c3fe54e4a76c7f11a67d737215dc5fd0f0b521a7da7da7ceb8f0bbe3c",
+      "classes\\Succulent.php": "e6d0513b417df53c09182eb1af0337d7140f689ff93d0a228489db6cc894336d",
+      "docs\\07_navantazhennya_optymizaciya.pdf": "afe06e03b19630aa3a22b2cbe2d81c157337490f8d4442d90c61572513c596e0",
+      "docs\\PHP07_ЦаплюкОГ_ІП-41.docx": "a377673fa99a89ec7a4014ed2de67badf9ec7027b95a60df552c0bf9fe6dbb76",
+      "lib\\api_common.php": "b13f9e218171f7ef958c1fe034d5bcca320f95a2a0a0bb6043c939c79dcb16ce",
+      "lib\\bootstrap.php": "f9139a3f8e6516a7cac5f354446d6bf151324a0461ce6ef46f1ba1bb574980b1",
+      "lib\\db.php": "ac6ee93b7766f0ab78cb85019d5e3be05bd608c5a3ecd0eed9fa5c2cab8fe02a",
+      "lib\\FileCache.php": "3b5c04029a7a6624af9f622e9da07c76d8fe007f30b804f5c6b7368f9616b806",
+      "lib\\functions.php": "54afad5ec21b66fdf41b310093a7f7c4cd8d47c815864796f9b3b2d244ab19db",
+      "lib\\MeasuredPDO.php": "b339710202b45cf5675112cb681ed4d4553466cd1a4ef1f6a45ab4c64117ae65",
+      "lib\\migrations.php": "e946876772de3dce95acfa81469d25b380d026967063784f3ad7dccdc2db8a36",
+      "lib\\Profile.php": "4679677430b17cc676a980bc6626529b8fe0ce90a35c4962242553507c68ea02",
+      "results\\ab.txt": "d1b5a052d245cd862ff9cf81447a60f19ba3745a2f60709924189dbe3b665e04",
+      "results\\summary.json": "bbd6397844cb9b2c40dec2189b4fd8f44513043fa4fb42f605266c0250ea72d2",
+      "sql\\01_due_date.sql": "1ea33ae9df6c4a4eade43e4a6277c4e516a26e551b3c0babb95d191003923ee5",
+      "sql\\indexes.sql": "aa39953421ece4eecab2c152885b83f75d8f6f1e1ed68cc3b30a4b9d5652abba",
+      "sql\\schema.sql": "f65c8806b09437029b799dbf0c2f28e5d922b23a16a2c1c96047a78ad0864690",
+      "tools\\benchmark.php": "aef57ad5cc1dc996af344b633e77c17d7151d32d9fcb5d7aaf3b3d3372845667",
+      "tools\\install.php": "016fe5eca8d1d284ffeacd29921902205fa83a18b85af84e7db479ece6c4ff26",
+      "assets\\css\\style.css": "9459a7a2353fe84fe0b5ac6adb31cc785cf4e6c9f405a8c4170cd27f343a2e6c",
+      "assets\\img\\alocasia.png": "911020007b7b5a3afa6d6791aabb63abd0c698a8da034af39e749bc41691d731",
+      "assets\\img\\succulent.png": "3c259949ebfd32784fe1e688276dc5036a1b4f43d9d2947ae0c76165dd01539a",
+      "assets\\img\\watering-can.png": "90ef173f9df01abd141c6101aa3197dfbbf56f61d03b01d0b0501e2772016428",
+      "assets\\js\\script.js": "095d058806fc1dbb94dc12c7de474cf711c851927b15c2f3cba8376bcc50f939",
+      "assets\\js\\sort.js": "9e3946742b48fda2e5d8fa992a37908bfd581a366da9797d57bec2a1560af54c"
+    },
+    "changed_inherited_files": [
+      "api.php",
+      "config.php",
+      "edit.php",
+      "index.php",
+      "README.md",
+      "lib\\api_common.php",
+      "lib\\bootstrap.php",
+      "results\\ab.txt",
+      "results\\summary.json",
+      "sql\\schema.sql",
+      "tools\\benchmark.php",
+      "tools\\install.php"
+    ],
+    "scope": "All 22 PHP files, both JavaScript files, HTML output, SQL scripts and HTTP entry points",
+    "sql": "User values are bound parameters. SQL fragments and identifiers are fixed or validated CLI configuration, never raw GET/POST.",
+    "xss": "DOM textContent; edit form htmlspecialchars ENT_QUOTES UTF-8; payloads remain text.",
+    "csrf": "All POST content types checked in apiBody; edit/delete requireFormPost.",
+    "dead_code": "No unused compatibility endpoints or duplicate handlers. Benchmark control classes are used by tools/benchmark.php. MeasuredStatement is instantiated by PDO.",
+    "assets_unchanged": true,
+    "installation": "Clean isolated schema installed twice; indexes not duplicated; source07 and user database not modified."
+  },
+  "documentation_review": {
+    "kind": "Source and saved-protocol consistency review; no new runtime test execution claimed",
+    "http_assertions": 65,
+    "browser_07_assertions": 11,
+    "browser_08_assertions": 23,
+    "comparison_records": 12,
+    "ab_series": 7,
+    "ab_requests": 1400,
+    "profile_samples": 70,
+    "pdf_steps": [
+      {
+        "step": 1,
+        "covered": true
+      },
+      {
+        "step": 2,
+        "covered": true
+      },
+      {
+        "step": 3,
+        "covered": true
+      },
+      {
+        "step": 4,
+        "covered": true
+      },
+      {
+        "step": 5,
+        "covered": true
+      },
+      {
+        "step": 6,
+        "covered": true
+      },
+      {
+        "step": 7,
+        "covered": true
+      },
+      {
+        "step": 8,
+        "covered": true
+      }
+    ],
+    "notes": [
+      "65 means assertions, not HTTP requests.",
+      "34 browser assertions cover both versions, not only 08.",
+      "SQLi and XSS protection already existed; a cross-site JSON exploit is not claimed.",
+      "README contains manual reproduction steps; XSS payloads are fenced as inline code.",
+      "Original raw execution results and timestamps have not been altered."
+    ]
+  }
+}

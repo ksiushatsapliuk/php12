@@ -1,0 +1,898 @@
+{
+    "environment": {
+        "started_at": "2026-11-03T14:27:34+02:00",
+        "php": "8.5.10",
+        "apache": "Server version: Apache\/2.4.58 (Win64)\r\nApache Lounge VS17 Server built:   Oct 18 2023 13:03:18",
+        "ab": "This is ApacheBench, Version 2.3 <$Revision: 1903618 $>\r\nCopyright 1996 Adam Twiss, Zeus Technology Ltd, http:\/\/www.zeustech.net\/\r\nLicensed to The Apache Software Foundation, http:\/\/www.apache.org\/",
+        "mysql": "8.0.43",
+        "server": "Apache WinNT, 32 threads; ab -n 200 -c 20 -k",
+        "rows": 500,
+        "profile_samples": 10,
+        "ab_requests": 200,
+        "ab_concurrency": 20,
+        "due_rows": 20,
+        "completed_at": "2026-11-03T14:28:07+02:00"
+    },
+    "original06": {
+        "elapsed_ms": 14.119019999999997,
+        "peak_mb": 2,
+        "sql_queries": 3,
+        "cache": "BYPASS",
+        "rows": 500,
+        "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c",
+        "requests_per_second": 227.68,
+        "time_per_request_ms": 87.844,
+        "failed_requests": 0,
+        "complete_requests": 200,
+        "concurrency": 20,
+        "url": "http:\/\/127.0.0.1:8109\/original06\/benchmarks\/original06.php?resource=plants",
+        "samples": [
+            {
+                "elapsed_ms": 25.032,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 11.9739,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 13.86,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 14.8771,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 7.966,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 20.9892,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 9.253,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 13.9711,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 10.843,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            },
+            {
+                "elapsed_ms": 12.4249,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "bde01a75c6262ad3512d668f5b12ede394d4bfdd2414164c6a144228fc4ffa0c"
+            }
+        ]
+    },
+    "nplus": {
+        "elapsed_ms": 298.59499999999997,
+        "peak_mb": 2,
+        "sql_queries": 503,
+        "cache": "BYPASS",
+        "rows": 500,
+        "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125",
+        "requests_per_second": 20.13,
+        "time_per_request_ms": 993.635,
+        "failed_requests": 0,
+        "complete_requests": 200,
+        "concurrency": 20,
+        "url": "http:\/\/127.0.0.1:8109\/nplus\/api.php?resource=plants",
+        "samples": [
+            {
+                "elapsed_ms": 257.659,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 417.3808,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 266.089,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 282.799,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 309.14,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 279.1851,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 265.0762,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 263.9079,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 317.138,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 327.575,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            }
+        ]
+    },
+    "nplus_due": {
+        "elapsed_ms": 24.61356,
+        "peak_mb": 2,
+        "sql_queries": 23,
+        "cache": "BYPASS",
+        "rows": 20,
+        "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908",
+        "requests_per_second": 191.31,
+        "time_per_request_ms": 104.545,
+        "failed_requests": 0,
+        "complete_requests": 200,
+        "concurrency": 20,
+        "url": "http:\/\/127.0.0.1:8109\/nplus\/api.php?resource=plants&due=1",
+        "samples": [
+            {
+                "elapsed_ms": 15.4779,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 12.382,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 18.532,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 15.897,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 15.573,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 66.891,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 13.1969,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 40.3819,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 19.284,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 28.5199,
+                "peak_mb": 2,
+                "sql_queries": 23,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            }
+        ]
+    },
+    "nplus_indexed": {
+        "elapsed_ms": 248.02767,
+        "peak_mb": 2,
+        "sql_queries": 503,
+        "cache": "BYPASS",
+        "rows": 500,
+        "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125",
+        "requests_per_second": 22.78,
+        "time_per_request_ms": 877.924,
+        "failed_requests": 0,
+        "complete_requests": 200,
+        "concurrency": 20,
+        "url": "http:\/\/127.0.0.1:8109\/nplus\/api.php?resource=plants",
+        "samples": [
+            {
+                "elapsed_ms": 311.81,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 287.8931,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 204,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 222.616,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 220.3639,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 210.5579,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 302.1648,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 277.545,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 223.8171,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 219.5089,
+                "peak_mb": 2,
+                "sql_queries": 503,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            }
+        ]
+    },
+    "optimized": {
+        "elapsed_ms": 44.12995999999999,
+        "peak_mb": 2,
+        "sql_queries": 3,
+        "cache": "BYPASS",
+        "rows": 500,
+        "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125",
+        "requests_per_second": 160.16,
+        "time_per_request_ms": 124.876,
+        "failed_requests": 0,
+        "complete_requests": 200,
+        "concurrency": 20,
+        "url": "http:\/\/127.0.0.1:8109\/after\/api.php?resource=plants",
+        "samples": [
+            {
+                "elapsed_ms": 22.7251,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 319.135,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 11.426,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 11.404,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 11.9371,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 18.553,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 11.2519,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 9.6452,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 12.5492,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            },
+            {
+                "elapsed_ms": 12.6731,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 500,
+                "body_sha256": "e5d793568511d4cf6f2cfd367ae9e8836cd4b7f4184998f874120ffb39e3a125"
+            }
+        ]
+    },
+    "grouped_due": {
+        "elapsed_ms": 7.05069,
+        "peak_mb": 2,
+        "sql_queries": 3,
+        "cache": "BYPASS",
+        "rows": 20,
+        "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908",
+        "requests_per_second": 203.72,
+        "time_per_request_ms": 98.175,
+        "failed_requests": 0,
+        "complete_requests": 200,
+        "concurrency": 20,
+        "url": "http:\/\/127.0.0.1:8109\/uncached\/api.php?resource=plants&due=1",
+        "samples": [
+            {
+                "elapsed_ms": 23.562,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 4.5581,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 4.456,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 6.1438,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 4.715,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 4.8661,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 4.7319,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 6.1169,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 5.3091,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 6.048,
+                "peak_mb": 2,
+                "sql_queries": 3,
+                "cache": "BYPASS",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            }
+        ]
+    },
+    "cache_cold": {
+        "elapsed_ms": 8.7001,
+        "peak_mb": 2,
+        "sql_queries": 3,
+        "cache": "MISS",
+        "rows": 20,
+        "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+    },
+    "cache_warm": {
+        "elapsed_ms": 8.52121,
+        "peak_mb": 2,
+        "sql_queries": 2,
+        "cache": "HIT",
+        "rows": 20,
+        "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908",
+        "requests_per_second": 361.36,
+        "time_per_request_ms": 55.346,
+        "failed_requests": 0,
+        "complete_requests": 200,
+        "concurrency": 20,
+        "url": "http:\/\/127.0.0.1:8109\/after\/api.php?resource=plants&due=1",
+        "samples": [
+            {
+                "elapsed_ms": 5.9791,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 29.392,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 7.4069,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 5.1751,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 6.361,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 5.7411,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 4.9031,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 9.1369,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 6.5281,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            },
+            {
+                "elapsed_ms": 4.5888,
+                "peak_mb": 2,
+                "sql_queries": 2,
+                "cache": "HIT",
+                "rows": 20,
+                "body_sha256": "2ab389797689f914434776c99d9e628d60374a7a9a0babda69209eeda6320908"
+            }
+        ]
+    },
+    "plans": {
+        "interval": {
+            "before": {
+                "sql": "SELECT p.*, grouped.same_interval_count\r\n                FROM plants p\r\n                JOIN (\r\n                    SELECT watering_interval_days, COUNT(*) AS same_interval_count\r\n                    FROM plants\r\n                    GROUP BY watering_interval_days\r\n                ) grouped ON grouped.watering_interval_days = p.watering_interval_days WHERE p.watering_interval_days = :interval ORDER BY p.id DESC",
+                "params": {
+                    ":interval": 7
+                },
+                "rows": [
+                    {
+                        "id": 1,
+                        "select_type": "PRIMARY",
+                        "table": "<derived2>",
+                        "partitions": null,
+                        "type": "ref",
+                        "possible_keys": "<auto_key0>",
+                        "key": "<auto_key0>",
+                        "key_len": "4",
+                        "ref": "const",
+                        "rows": 10,
+                        "filtered": 100,
+                        "Extra": "Using temporary; Using filesort"
+                    },
+                    {
+                        "id": 1,
+                        "select_type": "PRIMARY",
+                        "table": "p",
+                        "partitions": null,
+                        "type": "ALL",
+                        "possible_keys": null,
+                        "key": null,
+                        "key_len": null,
+                        "ref": null,
+                        "rows": 500,
+                        "filtered": 1,
+                        "Extra": "Using where; Using join buffer (hash join)"
+                    },
+                    {
+                        "id": 2,
+                        "select_type": "DERIVED",
+                        "table": "plants",
+                        "partitions": null,
+                        "type": "ALL",
+                        "possible_keys": null,
+                        "key": null,
+                        "key_len": null,
+                        "ref": null,
+                        "rows": 500,
+                        "filtered": 100,
+                        "Extra": "Using temporary"
+                    }
+                ]
+            },
+            "after": {
+                "sql": "SELECT p.*, grouped.same_interval_count\r\n                FROM plants p\r\n                JOIN (\r\n                    SELECT watering_interval_days, COUNT(*) AS same_interval_count\r\n                    FROM plants\r\n                    GROUP BY watering_interval_days\r\n                ) grouped ON grouped.watering_interval_days = p.watering_interval_days WHERE p.watering_interval_days = :interval ORDER BY p.id DESC",
+                "params": {
+                    ":interval": 7
+                },
+                "rows": [
+                    {
+                        "id": 1,
+                        "select_type": "PRIMARY",
+                        "table": "p",
+                        "partitions": null,
+                        "type": "ref",
+                        "possible_keys": "idx_plants_watering_interval",
+                        "key": "idx_plants_watering_interval",
+                        "key_len": "4",
+                        "ref": "const",
+                        "rows": 5,
+                        "filtered": 100,
+                        "Extra": "Backward index scan"
+                    },
+                    {
+                        "id": 1,
+                        "select_type": "PRIMARY",
+                        "table": "<derived2>",
+                        "partitions": null,
+                        "type": "ref",
+                        "possible_keys": "<auto_key0>",
+                        "key": "<auto_key0>",
+                        "key_len": "4",
+                        "ref": "const",
+                        "rows": 10,
+                        "filtered": 100,
+                        "Extra": "Using where"
+                    },
+                    {
+                        "id": 2,
+                        "select_type": "DERIVED",
+                        "table": "plants",
+                        "partitions": null,
+                        "type": "index",
+                        "possible_keys": "idx_plants_watering_interval",
+                        "key": "idx_plants_watering_interval",
+                        "key_len": "4",
+                        "ref": null,
+                        "rows": 500,
+                        "filtered": 100,
+                        "Extra": "Using index"
+                    }
+                ]
+            }
+        },
+        "due": {
+            "before": {
+                "sql": "SELECT p.*, grouped.same_interval_count\r\n                FROM plants p\r\n                JOIN (\r\n                    SELECT watering_interval_days, COUNT(*) AS same_interval_count\r\n                    FROM plants\r\n                    GROUP BY watering_interval_days\r\n                ) grouped ON grouped.watering_interval_days = p.watering_interval_days WHERE p.next_watering_at <= CURDATE()",
+                "params": [],
+                "rows": [
+                    {
+                        "id": 1,
+                        "select_type": "PRIMARY",
+                        "table": "p",
+                        "partitions": null,
+                        "type": "ALL",
+                        "possible_keys": null,
+                        "key": null,
+                        "key_len": null,
+                        "ref": null,
+                        "rows": 500,
+                        "filtered": 33.33,
+                        "Extra": "Using where"
+                    },
+                    {
+                        "id": 1,
+                        "select_type": "PRIMARY",
+                        "table": "<derived2>",
+                        "partitions": null,
+                        "type": "ref",
+                        "possible_keys": "<auto_key0>",
+                        "key": "<auto_key0>",
+                        "key_len": "4",
+                        "ref": "floracare08_bench_c1003781378de6e4.p.watering_interval_days",
+                        "rows": 10,
+                        "filtered": 100,
+                        "Extra": null
+                    },
+                    {
+                        "id": 2,
+                        "select_type": "DERIVED",
+                        "table": "plants",
+                        "partitions": null,
+                        "type": "ALL",
+                        "possible_keys": null,
+                        "key": null,
+                        "key_len": null,
+                        "ref": null,
+                        "rows": 500,
+                        "filtered": 100,
+                        "Extra": "Using temporary"
+                    }
+                ]
+            },
+            "after": {
+                "sql": "SELECT p.*, grouped.same_interval_count\r\n                FROM plants p\r\n                JOIN (\r\n                    SELECT watering_interval_days, COUNT(*) AS same_interval_count\r\n                    FROM plants\r\n                    GROUP BY watering_interval_days\r\n                ) grouped ON grouped.watering_interval_days = p.watering_interval_days WHERE p.next_watering_at <= CURDATE()",
+                "params": [],
+                "rows": [
+                    {
+                        "id": 1,
+                        "select_type": "PRIMARY",
+                        "table": "p",
+                        "partitions": null,
+                        "type": "range",
+                        "possible_keys": "idx_plants_watering_interval,idx_plants_next_watering",
+                        "key": "idx_plants_next_watering",
+                        "key_len": "4",
+                        "ref": null,
+                        "rows": 20,
+                        "filtered": 100,
+                        "Extra": "Using index condition"
+                    },
+                    {
+                        "id": 1,
+                        "select_type": "PRIMARY",
+                        "table": "<derived2>",
+                        "partitions": null,
+                        "type": "ref",
+                        "possible_keys": "<auto_key0>",
+                        "key": "<auto_key0>",
+                        "key_len": "4",
+                        "ref": "floracare08_bench_c1003781378de6e4.p.watering_interval_days",
+                        "rows": 10,
+                        "filtered": 100,
+                        "Extra": null
+                    },
+                    {
+                        "id": 2,
+                        "select_type": "DERIVED",
+                        "table": "plants",
+                        "partitions": null,
+                        "type": "index",
+                        "possible_keys": "idx_plants_watering_interval",
+                        "key": "idx_plants_watering_interval",
+                        "key_len": "4",
+                        "ref": null,
+                        "rows": 500,
+                        "filtered": 100,
+                        "Extra": "Using index"
+                    }
+                ]
+            }
+        }
+    }
+}
