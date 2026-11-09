@@ -22,15 +22,33 @@ html { background-color: #020d09; }
 
 .board-message.is-error { color: var(--alert-color); }
 
-.announcement-feed { display: grid; gap: 18px; }
+.announcement-feed {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
 
-.announcement-card { margin: 0; overflow-wrap: anywhere; }
+.announcement-card {
+    --text-muted: #526e60;
+    --accent-emerald: #176343;
+    --alert-color: #a52a37;
+    margin: 0;
+    min-width: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    background: #d9eee1;
+    color: #173d2b;
+    border-color: #b4d5c1;
+    overflow-wrap: anywhere;
+}
 
 .announcement-card h3 { margin: 0; font-size: 19px; }
 
 .announcement-card p { margin: 12px 0; white-space: pre-wrap; line-height: 1.6; font-size: 14px; }
 
-.announcement-meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.announcement-meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: auto; padding-top: 8px; }
 
 .announcement-meta time { color: var(--text-muted); font-size: 13px; }
 
@@ -74,6 +92,11 @@ html { background-color: #020d09; }
     .announcement-enter, .announcement-new { animation: none; }
 }
 
+@media (max-width: 1000px) {
+    .announcement-feed { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (max-width: 600px) {
+    .announcement-feed { grid-template-columns: minmax(0, 1fr); }
     .board-feed-heading { align-items: stretch; flex-direction: column; }
 }
