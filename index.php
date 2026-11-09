@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FloraCare — Догляд за рослинами (PDO/MySQL)</title>
     <link rel="stylesheet" href="assets/css/style.css?v=3">
+    <link rel="stylesheet" href="assets/css/announcements.css">
 </head>
 <body>
 <div class="app-container">
@@ -19,9 +20,7 @@
         </div>
     </header>
 
-    <nav aria-label="Розділи застосунку" style="margin-bottom:24px;">
-        <a class="btn-secondary" href="announcements.php" style="text-decoration:none;">Дошка сусідських оголошень</a>
-    </nav>
+    <?php require __DIR__ . '/lib/announcement_board_view.php'; ?>
 
     <!-- Форма додавання (INSERT) -->
     <div class="form-card" style="margin-bottom: 32px;">
@@ -116,6 +115,7 @@
         </table>
     </div>
 </div>
+<script src="assets/js/announcements.js"></script>
 <script src="assets/js/sort.js"></script>
 <script src="assets/js/script.js"></script>
 </body>

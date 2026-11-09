@@ -25,32 +25,7 @@
         <span aria-current="page">Оголошення</span>
     </nav>
 
-    <section class="form-card">
-        <h2 class="form-title">Додати оголошення</h2>
-        <form id="announcementForm" action="api.php?resource=announcements" method="post">
-            <input type="hidden" name="csrf" value="<?= htmlspecialchars($csrfToken, ENT_QUOTES, 'UTF-8') ?>">
-            <div class="form-group">
-                <label for="title">Заголовок <span class="req">*</span></label>
-                <input class="form-control" id="title" name="title" maxlength="160" required placeholder="Наприклад, обмін саджанцями у дворі">
-            </div>
-            <div class="form-group">
-                <label for="announcementBody">Текст оголошення <span class="req">*</span></label>
-                <textarea class="form-control" id="announcementBody" name="body" rows="3" maxlength="2000" required placeholder="Що ви пропонуєте сусідам?"></textarea>
-            </div>
-            <div class="form-actions">
-                <button class="btn-primary" type="submit">Опублікувати оголошення</button>
-            </div>
-        </form>
-    </section>
-
-    <section aria-labelledby="feedTitle">
-        <div class="sort-bar board-feed-heading">
-            <h2 id="feedTitle">Оголошення сусідів</h2>
-            <button id="refreshAnnouncements" class="btn-secondary" type="button">Оновити стрічку</button>
-        </div>
-        <p id="boardMessage" class="board-message" role="status" aria-live="polite">Завантаження оголошень…</p>
-        <div id="announcementFeed" class="announcement-feed" aria-busy="true"></div>
-    </section>
+    <?php require __DIR__ . '/lib/announcement_board_view.php'; ?>
 </main>
 <script src="assets/js/announcements.js"></script>
 </body>

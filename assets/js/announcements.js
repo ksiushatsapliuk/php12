@@ -3,12 +3,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const feed = document.getElementById('announcementFeed');
     const message = document.getElementById('boardMessage');
     const refresh = document.getElementById('refreshAnnouncements');
+    const editor = document.getElementById('announcementEditor');
+    const openEditor = document.getElementById('openAnnouncementEditor');
+    const cancelEditor = document.getElementById('cancelAnnouncementEditor');
+    const editorMessage = document.getElementById('announcementEditorMessage');
     const publish = form.querySelector('button[type="submit"]');
     const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
     const token = form.elements.csrf.value;
     let announcements = [];
     let initialized = false;
-    let requestNumber = 0;
+    let busy = false;
+    let publishing = false;
+
+    function setBusy(value) {
+        busy = value;
+        refresh.disabled = value;
+        publish.disabled = value;
+        feed.setAttribute('aria-busy', String(value));
+    }
+
+    openEditor.addEventListener('click', () => {
+        editorMessage.hidden = true;
+        editor.showModal();
+    });
+
+    cancelEditor.addEventListener('click', () => editor.close());
+    editor.addEventListener('cancel', event => {
+        if (publishing) event.preventDefault();
+    });
 
     function status(text, error = false) {
         message.textContent = text;
@@ -95,15 +117,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function load() {
-        const current = ++requestNumber;
-        feed.setAttribute('aria-busy', 'true');
-        refresh.disabled = true;
-        publish.disabled = true;
+        if (busy) return;
+        setBusy(true);
 
         try {
             const data = await request();
 
-            if (current !== requestNumber) return;
             if (!Array.isArray(data)) throw new Error('Сервер повернув некоректний список.');
 
             const previousIds = new Set(announcements.map(post => post.id));
@@ -113,56 +132,52 @@ document.addEventListener('DOMContentLoaded', () => {
             render(newIds);
             status(data.length ? 'Оголошень: ' + data.length : 'Оголошень поки немає. Додайте перше!');
         } catch (error) {
-            if (current === requestNumber) status(error.message, true);
+            status(error.message, true);
         } finally {
-            if (current === requestNumber) {
-                feed.setAttribute('aria-busy', 'false');
-                refresh.disabled = false;
-                publish.disabled = false;
-            }
+            setBusy(false);
         }
     }
 
     form.addEventListener('submit', async event => {
         event.preventDefault();
-        const button = form.querySelector('button[type="submit"]');
+        if (busy) return;
 
-        if (button.disabled) return;
-
-        button.disabled = true;
-        refresh.disabled = true;
+        setBusy(true);
+        publishing = true;
+        cancelEditor.disabled = true;
+        editorMessage.hidden = true;
 
         try {
             const post = await request('', new FormData(form));
-            ++requestNumber;
             announcements = [post, ...announcements.filter(item => item.id !== post.id)];
             initialized = true;
             render(new Set([post.id]));
             form.reset();
+            editor.close();
             status('Оголошення опубліковано. У стрічці: ' + announcements.length);
         } catch (error) {
-            status(error.message, true);
+            editorMessage.textContent = error.message;
+            editorMessage.hidden = false;
         } finally {
-            button.disabled = false;
-            refresh.disabled = false;
-            feed.setAttribute('aria-busy', 'false');
+            publishing = false;
+            cancelEditor.disabled = false;
+            setBusy(false);
         }
     });
 
     feed.addEventListener('click', async event => {
         const button = event.target.closest('.announcement-remove');
 
-        if (!button || button.disabled || !confirm('Видалити це оголошення?')) return;
+        if (!button || busy || !confirm('Видалити це оголошення?')) return;
 
         button.disabled = true;
-        refresh.disabled = true;
+        setBusy(true);
         const id = Number(button.closest('article').dataset.id);
         const values = new FormData();
         values.set('id', id);
 
         try {
             await request('&action=delete', values);
-            ++requestNumber;
             announcements = announcements.filter(post => post.id !== id);
             render();
             status(announcements.length ? 'Оголошення видалено. У стрічці: ' + announcements.length : 'Оголошень поки немає. Додайте перше!');
@@ -170,9 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status(error.message, true);
             button.disabled = false;
         } finally {
-            refresh.disabled = false;
-            feed.setAttribute('aria-busy', 'false');
-            publish.disabled = false;
+            setBusy(false);
         }
     });
 

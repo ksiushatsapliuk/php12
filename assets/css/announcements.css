@@ -1,5 +1,5 @@
 /* Окремий модуль використовує кольори та компоненти каталогу без зміни його CSS. */
-html { background-color: #020d09; }
+.announcement-board { margin-bottom: 32px; }
 
 .board-nav {
     display: flex;
@@ -10,11 +10,26 @@ html { background-color: #020d09; }
 
 .board-nav a { text-decoration: none; }
 
-.board-nav .btn-secondary, .board-feed-heading .btn-secondary { width: auto; }
+.board-nav .btn-secondary, .board-feed-actions button { width: auto; }
 
 .board-nav span { color: var(--text-muted); }
 
-.board-feed-heading { margin-top: 32px; }
+.board-feed-heading { margin-top: 0; }
+
+.board-feed-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.announcement-editor {
+    position: fixed;
+    inset: 0;
+    width: min(560px, calc(100% - 32px));
+    max-height: calc(100% - 32px);
+    margin: auto;
+    overflow: auto;
+    background: #14372b;
+    color: var(--text-main);
+}
+
+.announcement-editor::backdrop { background: rgba(0, 0, 0, 0.68); }
 
 .board-feed-heading h2 { margin: 0; font-size: 18px; }
 
@@ -99,4 +114,5 @@ html { background-color: #020d09; }
 @media (max-width: 600px) {
     .announcement-feed { grid-template-columns: minmax(0, 1fr); }
     .board-feed-heading { align-items: stretch; flex-direction: column; }
+    .board-feed-actions button { flex: 1 1 150px; }
 }

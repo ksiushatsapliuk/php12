@@ -1,0 +1,593 @@
+{
+  "entry_point": "index.php",
+  "database": "isolated MySQL 8.0.43 on port 3313",
+  "announcements_browser": {
+    "tested_at": "2026-11-09T12:01:55.560Z",
+    "checks": [
+      {
+        "test": "initial_list_uses_database",
+        "passed": true
+      },
+      {
+        "test": "initial_records_not_animated",
+        "passed": true
+      },
+      {
+        "test": "csrf_reject_missing",
+        "passed": true
+      },
+      {
+        "test": "csrf_reject_wrong",
+        "passed": true
+      },
+      {
+        "test": "server_validation_4",
+        "passed": true
+      },
+      {
+        "test": "server_validation_5",
+        "passed": true
+      },
+      {
+        "test": "server_validation_6",
+        "passed": true
+      },
+      {
+        "test": "server_validation_7",
+        "passed": true
+      },
+      {
+        "test": "server_validation_8",
+        "passed": true
+      },
+      {
+        "test": "server_validation_9",
+        "passed": true
+      },
+      {
+        "test": "rejected_requests_do_not_change_data",
+        "passed": true
+      },
+      {
+        "test": "delete_get_405",
+        "passed": true
+      },
+      {
+        "test": "unsupported_method_405",
+        "passed": true
+      },
+      {
+        "test": "catalog_and_board_visible_together",
+        "passed": true
+      },
+      {
+        "test": "editor_hidden_at_start",
+        "passed": true
+      },
+      {
+        "test": "editor_opens_and_focuses_title",
+        "passed": true
+      },
+      {
+        "test": "escape_closes_and_restores_focus",
+        "passed": true
+      },
+      {
+        "test": "publish_error_keeps_editor_and_draft",
+        "passed": true
+      },
+      {
+        "test": "publish_error_does_not_animate_or_insert",
+        "passed": true
+      },
+      {
+        "test": "publish_returns_201",
+        "passed": true
+      },
+      {
+        "test": "success_closes_editor",
+        "passed": true
+      },
+      {
+        "test": "new_post_first",
+        "passed": true
+      },
+      {
+        "test": "real_response_fields",
+        "passed": true
+      },
+      {
+        "test": "slide_down_and_fade_in",
+        "passed": true,
+        "motion": {
+          "opacity": 0.480594,
+          "y": -12.4658,
+          "duration": 550
+        }
+      },
+      {
+        "test": "animation_keeps_frames_responsive",
+        "passed": true,
+        "frames": {
+          "max_ms": 14.599999999999909,
+          "average_ms": 7.413333333333337
+        }
+      },
+      {
+        "test": "entry_animation_finishes",
+        "passed": true
+      },
+      {
+        "test": "new_badge_fades",
+        "passed": true,
+        "fading": {
+          "opacity": 0.257779,
+          "duration": 4000
+        }
+      },
+      {
+        "test": "badge_removed_after_animation",
+        "passed": true
+      },
+      {
+        "test": "existing_cards_preserved",
+        "passed": true
+      },
+      {
+        "test": "refresh_does_not_reanimate_known_records",
+        "passed": true
+      },
+      {
+        "test": "refresh_animates_only_new_id",
+        "passed": true
+      },
+      {
+        "test": "visibility_handler_pauses_css",
+        "passed": true,
+        "method": "visibilitychange dispatched with document.hidden=true"
+      },
+      {
+        "test": "visibility_handler_resumes_css",
+        "passed": true
+      },
+      {
+        "test": "pagehide_finishes_animations",
+        "passed": true
+      },
+      {
+        "test": "changing_motion_preference_finishes_animation",
+        "passed": true
+      },
+      {
+        "test": "reduced_motion_new_post_static",
+        "passed": true
+      },
+      {
+        "test": "reload_preserves_posts_without_new_badges",
+        "passed": true
+      },
+      {
+        "test": "xss_is_text",
+        "passed": true
+      },
+      {
+        "test": "no_alert_executed",
+        "passed": true
+      },
+      {
+        "test": "sql_payload_saved_as_data",
+        "passed": true
+      },
+      {
+        "test": "delete_without_token_403",
+        "passed": true
+      },
+      {
+        "test": "cancel_delete_keeps_record",
+        "passed": true
+      },
+      {
+        "test": "confirm_delete_removes_record",
+        "passed": true
+      },
+      {
+        "test": "mobile_has_no_horizontal_overflow",
+        "passed": true
+      },
+      {
+        "test": "network_error_keeps_existing_feed",
+        "passed": true
+      },
+      {
+        "test": "no_javascript_errors",
+        "passed": true,
+        "errors": []
+      }
+    ]
+  },
+  "plants_http": {
+    "tested_at": "2026-11-09T14:01:49+02:00",
+    "url": "http://127.0.0.1:8121",
+    "php": "8.5.10",
+    "total": 65,
+    "passed": 65,
+    "failed": 0,
+    "checks": [
+      {
+        "test": "session_token",
+        "passed": true
+      },
+      {
+        "test": "create_json_with_token",
+        "passed": true
+      },
+      {
+        "test": "new_session_has_other_token",
+        "passed": true
+      },
+      {
+        "test": "csrf_create_json_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_json_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_json_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_create_form_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_json_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_water_form_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_edit_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_missing",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_wrong",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "csrf_delete_old_session",
+        "passed": true,
+        "expected_http": 403,
+        "actual_http": 403,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_missing_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_blank_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_array_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_long_name",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_negative_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_zero_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_large_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_fraction_interval",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_invalid_date",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_future_date",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_invalid_flag",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "validation_blank_light",
+        "passed": true,
+        "expected_http": 400,
+        "actual_http": 400,
+        "data_unchanged": true
+      },
+      {
+        "test": "edit_server_validation",
+        "passed": true,
+        "expected_http": 422,
+        "actual_http": 422,
+        "data_unchanged": true
+      },
+      {
+        "test": "delete_invalid_id",
+        "passed": true,
+        "expected_http": 422,
+        "actual_http": 422,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_2",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_3",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_delete_4",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_water",
+        "passed": true,
+        "expected_http": 405,
+        "actual_http": 405,
+        "data_unchanged": true
+      },
+      {
+        "test": "get_edit_does_not_save",
+        "passed": true,
+        "expected_http": 200,
+        "actual_http": 200,
+        "data_unchanged": true
+      },
+      {
+        "test": "edit_invalid_id_abc",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_-1",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_1%20OR%201=1",
+        "passed": true
+      },
+      {
+        "test": "edit_invalid_id_%5B1%5D",
+        "passed": true
+      },
+      {
+        "test": "sqli_search",
+        "passed": true,
+        "payload": "' OR '1'='1"
+      },
+      {
+        "test": "sqli_interval",
+        "passed": true
+      },
+      {
+        "test": "xss_payload_saved_3",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_3",
+        "passed": true,
+        "payload": "<script>alert(1)</script>"
+      },
+      {
+        "test": "xss_payload_saved_4",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_4",
+        "passed": true,
+        "payload": "<img src=x onerror=alert(1)>"
+      },
+      {
+        "test": "xss_payload_saved_5",
+        "passed": true
+      },
+      {
+        "test": "xss_edit_escaped_5",
+        "passed": true,
+        "payload": "\"><svg onload=alert(1)>"
+      },
+      {
+        "test": "markWatered_with_token",
+        "passed": true
+      },
+      {
+        "test": "edit_form_with_token",
+        "passed": true
+      },
+      {
+        "test": "create_form_with_hidden_token",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/install.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/benchmark.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_tools/security_check.php",
+        "passed": true
+      },
+      {
+        "test": "http_guard_benchmarks/original06.php?resource=plants",
+        "passed": true
+      },
+      {
+        "test": "cleanup_2",
+        "passed": true
+      },
+      {
+        "test": "cleanup_3",
+        "passed": true
+      },
+      {
+        "test": "cleanup_4",
+        "passed": true
+      },
+      {
+        "test": "cleanup_5",
+        "passed": true
+      },
+      {
+        "test": "cleanup_6",
+        "passed": true
+      },
+      {
+        "test": "original_data_restored",
+        "passed": true
+      }
+    ]
+  }
+}
